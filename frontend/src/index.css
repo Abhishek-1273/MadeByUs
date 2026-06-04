@@ -1,0 +1,41 @@
+/* ── global reset + tokens ────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #FAF8F5;
+  color: #1C1410;
+  overflow-x: hidden;
+}
+
+:root {
+  --ink:       #1C1410;
+  --muted:     #7A6558;
+  --faint:     #B0A098;
+  --line:      #E8E0D8;
+  --bg:        #FAF8F5;
+  --white:     #FFFFFF;
+  --rose:      #C4707A;
+  --rose-bg:   #F7EDEF;
+  --rose-mid:  #E9C6CA;
+  --gold:      #B8965A;
+  --gold-bg:   #F6F1E8;
+  --green:     #108f3e;
+  --r-sm:      8px;
+  --r-md:      12px;
+  --r-lg:      18px;
+  --r-xl:      24px;
+  --r-full:    999px;
+  --shadow-xs: 0 1px 4px rgba(28,20,16,.06);
+  --shadow-sm: 0 2px 12px rgba(28,20,16,.08);
+  --shadow-md: 0 6px 28px rgba(28,20,16,.11);
+  --shadow-lg: 0 12px 48px rgba(28,20,16,.14);
+}
+
+::selection { background: var(--rose-mid); }
+
+::-webkit-scrollbar        { width: 5px; }
+::-webkit-scrollbar-track  { background: var(--bg); }
+::-webkit-scrollbar-thumb  { background: var(--rose-mid); border-radius: var(--r-full); }

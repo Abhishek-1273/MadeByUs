@@ -1,0 +1,140 @@
+.section {
+  background: var(--ink);
+  padding: 80px 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .3);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 600;
+  color: #fff;
+}
+
+.sub {
+  font-size: .82rem;
+  color: rgba(255, 255, 255, .35);
+  margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.tile {
+  aspect-ratio: 1/1;
+  border-radius: var(--r-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tileEmoji {
+  font-size: 2.2rem;
+  transition: transform .4s;
+  color: var(--rose)
+}
+
+.tile:hover .tileEmoji {
+  transform: scale(1.12);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(28, 20, 16, .68);
+  opacity: 0;
+  transition: opacity .25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.tile:hover .overlay {
+  opacity: 1;
+}
+
+.overlayLikes {
+  font-family: 'Poppins', sans-serif;
+  font-size: .72rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.overlayCaption {
+  font-family: 'Poppins', sans-serif;
+  font-size: .65rem;
+  color: rgba(255, 255, 255, .65);
+  text-align: center;
+  padding: 0 8px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.followBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff;
+  border: none;
+  border-radius: var(--r-full);
+  font-family: 'Poppins', sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity .2s, transform .2s;
+}
+
+.followBtn:hover {
+  opacity: .88;
+  transform: translateY(-1px);
+}
+
+@media(max-width:900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width:500px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

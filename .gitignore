@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# env (SECRETS - kabhi push mat karo)
+.env
+**/.env
+.env.local
+**/.env.local
+
+# build output
+dist/
+**/dist/
+build/
+
+# logs / misc
+*.log
+.DS_Store

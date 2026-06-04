@@ -1,0 +1,92 @@
+/* ── shared page wrapper (Dashboard + Products dono use karte) ── */
+.page {
+    padding: 36px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-head {
+    margin-bottom: 28px;
+}
+
+.page-head h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.muted {
+    color: var(--muted);
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+/* ── stats ── */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--white);
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stat-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon--ink {
+    background: var(--bg);
+    color: var(--ink);
+}
+
+.stat-icon--green {
+    background: #EAF4EC;
+    color: #3E8E5A;
+}
+
+.stat-icon--rose {
+    background: var(--rose-bg);
+    color: var(--rose);
+}
+
+.stat-label {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ink);
+}

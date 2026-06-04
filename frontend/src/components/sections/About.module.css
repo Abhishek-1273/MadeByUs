@@ -1,0 +1,148 @@
+.section {
+  background: var(--bg);
+  padding: 80px 0;
+  border-top: 1px solid var(--line);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.label {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.title em {
+  color: var(--rose);
+  font-style: italic;
+}
+
+.divider {
+  width: 40px;
+  height: 1.5px;
+  background: var(--rose);
+  border-radius: var(--r-full);
+  display: block;
+  margin-bottom: 24px;
+}
+
+.paras {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.para {
+  font-size: .88rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.sig {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+  padding: 16px 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  width: fit-content;
+}
+
+.sigIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-md);
+  background: var(--rose-bg);
+  border: 1px solid var(--rose-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.sigName {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.sigRole {
+  font-size: .73rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.valueCard {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  padding: 20px;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.valueCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.valueIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.valueName {
+  font-family: 'Poppins', sans-serif;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.valueDesc {
+  font-size: .74rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+@media(max-width:820px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

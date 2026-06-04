@@ -1,0 +1,222 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  height: 100%;             
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.visual {
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.emoji {
+  font-size: 3rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.badges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: var(--r-full);
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.badgeDark {
+  background: var(--ink);
+  color: #fff;
+}
+
+.badgeRose {
+  background: var(--rose-bg);
+  color: var(--rose);
+}
+
+.soldOut {
+  position: absolute;
+  inset: 0;
+  background: rgba(250, 248, 245, .72);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soldOutTag {
+  background: var(--ink);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: .72rem;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: var(--r-full);
+}
+
+.body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.star {
+  font-size: 11px;
+}
+
+.starFilled {
+  color: var(--gold);
+}
+
+.starEmpty {
+  color: var(--line);
+}
+
+.reviewCount {
+  font-size: .7rem;
+  color: var(--faint);
+  margin-left: 4px;
+}
+
+.name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: .98rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: .78rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 8px;
+  min-height: 2.6em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.colors {
+  font-size: .7rem;
+  color: var(--faint);
+  margin-bottom: 12px;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--rose);
+}
+
+.mrp {
+  font-size: .8rem;
+  color: var(--faint);
+  text-decoration: line-through;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;           
+}
+
+.btnWa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 0;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: var(--r-full);
+  font-family: 'Poppins', sans-serif;
+  font-size: .74rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+
+.btnWa:hover {
+  background: #1eb855;
+  transform: translateY(-1px);
+}
+.disabled {
+  opacity: .45;
+  pointer-events: none;
+}
+
+.btnIg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 0;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff;
+  border: none;
+  border-radius: var(--r-full);
+  font-family: 'Poppins', sans-serif;
+  font-size: .74rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity .2s, transform .2s;
+}
+
+.btnIg:hover {
+  opacity: .88;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,266 @@
+.section {
+  background: var(--white);
+  padding: 80px 0;
+  border-top: 1px solid var(--line);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.label {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.title em {
+  color: var(--rose);
+  font-style: italic;
+}
+
+.divider {
+  width: 40px;
+  height: 1.5px;
+  background: var(--rose);
+  border-radius: var(--r-full);
+  display: block;
+  margin: 0 auto 14px;
+}
+
+.sub {
+  font-size: .85rem;
+  color: var(--muted);
+  max-width: 460px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  background: var(--bg);
+  transition: transform .28s, box-shadow .28s;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.visual {
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emoji {
+  font-size: 3.2rem;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 3px 10px;
+  border-radius: var(--r-full);
+  font-size: .63rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  background: var(--rose-bg);
+  color: var(--rose);
+  border: 1px solid var(--rose-mid);
+}
+
+.body {
+  padding: 20px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: .8rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.includesLabel {
+  font-size: .65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--faint);
+  margin-bottom: 8px;
+}
+
+.includesList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.includesItem {
+  font-size: .76rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--rose);
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.rowBtn {
+  margin-top: auto;
+}
+
+.price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--rose);
+}
+
+.stars {
+  color: var(--gold);
+  font-size: 12px;
+}
+
+.btnWa {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px 0;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: var(--r-full);
+  font-family: 'Poppins', sans-serif;
+  font-size: .82rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+
+.btnWa:hover {
+  background: #1eb855;
+  transform: translateY(-1px);
+}
+
+.banner {
+  margin-top: 36px;
+  background: var(--ink);
+  border-radius: var(--r-xl);
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.bannerTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.bannerSub {
+  font-size: .86rem;
+  color: rgba(255, 255, 255, .5);
+  max-width: 380px;
+  margin: 0 auto 24px;
+  line-height: 1.7;
+}
+
+.bannerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: var(--rose);
+  color: #fff;
+  border: none;
+  border-radius: var(--r-full);
+  font-family: 'Poppins', sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s;
+}
+
+.bannerBtn:hover {
+  background: #b35f69;
+}
+
+@media(max-width:860px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width:861px) and (max-width:1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

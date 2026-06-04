@@ -1,0 +1,91 @@
+/* ── reset ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── design tokens ─────────────────────────────────────── */
+:root {
+  --ink: #1C1410;
+  --muted: #7A6558;
+  --faint: #B0A098;
+  --line: #E8E0D8;
+  --bg: #FAF8F5;
+  --white: #FFFFFF;
+  --rose: #C4707A;
+  --rose-bg: #F7EDEF;
+  --rose-mid: #E9C6CA;
+  --gold: #B8965A;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+  --r-full: 999px;
+  --shadow-sm: 0 2px 12px rgba(28, 20, 16, .08);
+  --shadow-md: 0 6px 28px rgba(28, 20, 16, .11);
+  --shadow-lg: 0 12px 48px rgba(28, 20, 16, .14);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── brand icon (login + dashboard dono use karte hain) ── */
+.brand-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--rose-bg);
+  border: 1px solid var(--rose-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--rose);
+}
+
+.brand-icon.sm {
+  width: 34px;
+  height: 34px;
+}
+
+/* ── loading screen (ProtectedRoute use karta hai) ─────── */
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: var(--bg);
+}
+
+.loading-screen p {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.spinner {
+  width: 38px;
+  height: 38px;
+  border: 3px solid var(--line);
+  border-top-color: var(--rose);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
