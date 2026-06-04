@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Navigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import toast from 'react-hot-toast'
 import './Login.css'
@@ -15,9 +15,8 @@ const Login = () => {
     const navigate = useNavigate()
 
     if (isAuthenticated) {
-        navigate('/dashboard')
-        return null
-    }
+    return <Navigate to="/dashboard" replace />
+}
 
     const handleSubmit = async (e) => {
         e.preventDefault()

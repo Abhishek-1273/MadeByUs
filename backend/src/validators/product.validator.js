@@ -46,8 +46,8 @@ export const createProductValidator = [
     .withMessage('Colors must be an array'),
 
   body('badge')
-    .optional()
-    .isIn(['Bestseller', 'New', 'Limited', 'Unique', null])
+    .optional({ nullable: true, checkFalsy: true })
+    .isIn(['Bestseller', 'New', 'Limited', 'Unique'])
     .withMessage('Invalid badge'),
 
   body('inStock')

@@ -153,12 +153,15 @@
     .sidebar {
         width: 100%;
         height: auto;
-        position: static;
+        position: sticky;
+        top: 0;
+        z-index: 20;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         flex-wrap: wrap;
         gap: 12px;
-        padding: 14px 18px;
+        padding: 12px 16px;
     }
 
     .sidebar-brand {
@@ -167,10 +170,18 @@
     }
 
     .sidebar-nav {
+        order: 3;
+        width: 100%;
+        flex: 1 1 100%;
         flex-direction: row;
         margin: 0;
+        gap: 8px;
+    }
+
+    .nav-link {
         flex: 1;
         justify-content: center;
+        padding: 9px 10px;
     }
 
     .sidebar-foot {
@@ -182,5 +193,9 @@
 
     .sb-user {
         display: none;
+    }
+
+    .sb-logout {
+        padding: 9px 14px;
     }
 }

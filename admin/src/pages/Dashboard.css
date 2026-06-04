@@ -90,3 +90,14 @@
     font-weight: 600;
     color: var(--ink);
 }
+
+/* ── responsive ── */
+@media (max-width: 768px) {
+    .page {
+        padding: 20px 16px;
+    }
+
+    .page-head h2 {
+        font-size: 1.45rem;
+    }
+}

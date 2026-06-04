@@ -83,12 +83,8 @@ export const createProduct = async (req, res) => {
 // ── Update Product (Admin only) ────────────────────
 export const updateProduct = async (req, res) => {
     try {
-        const updated = await Product.findByIdAndUpdate(
-            {
-                _id: req.params.id,
-                isActive: true
-
-            },
+        const updated = await Product.findOneAndUpdate(
+            { _id: req.params.id, isActive: true },
             req.body,
             { new: true, runValidators: true }
         )
