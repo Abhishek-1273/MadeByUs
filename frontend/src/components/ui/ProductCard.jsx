@@ -75,6 +75,6 @@ export default function ProductCard({ product: p }) {
           </a>
         </div>
       </div>
-    </motion.div>
+    </motion.div >
   )
 }

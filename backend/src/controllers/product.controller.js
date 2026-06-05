@@ -53,7 +53,7 @@ export const getProductById = async (req, res) => {
 
 export const createProduct = async (req, res) => {
     try {
-        const { name, description, price, mrp, category, colors, images, emoji, badge, inStock } = req.body;
+        const { name, description, price, mrp, category, colors, images, rating, reviews, emoji, badge, inStock } = req.body;
         const product = await Product.create({
             name,
             description,
@@ -64,6 +64,8 @@ export const createProduct = async (req, res) => {
             images: images || [],
             emoji,
             badge,
+            rating: rating || 0,
+            reviews: 0,
             inStock
         })
         res.status(201).json({

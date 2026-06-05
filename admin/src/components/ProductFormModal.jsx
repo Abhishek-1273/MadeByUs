@@ -24,6 +24,8 @@ const ProductFormModal = ({ product, onClose, onSaved }) => {
         emoji: product?.emoji || '🌸',
         badge: product?.badge || '',
         inStock: product?.inStock ?? true,
+        rating: product?.rating || 0,
+        reviews: product?.reviews || 0
     })
     const [images, setImages] = useState(initialImages)
     const [uploading, setUploading] = useState(false)
@@ -89,6 +91,8 @@ const ProductFormModal = ({ product, onClose, onSaved }) => {
             emoji: form.emoji || '🌸',
             badge: form.badge || null,
             inStock: form.inStock,
+            rating: Number(form.rating) || 0,
+            reviews: Number(form.reviews) || 0,
         }
 
         try {
@@ -154,12 +158,40 @@ const ProductFormModal = ({ product, onClose, onSaved }) => {
 
                     <div className="fg-row">
                         <div className="fg">
-                            <label>Colors (comma se)</label>
+                            <label>Colors</label>
                             <input name="colors" value={form.colors} onChange={change} placeholder="Red, Pink, Gold" />
                         </div>
                         <div className="fg">
-                            <label>Emoji (image na ho to fallback)</label>
+                            <label>Emoji</label>
                             <input name="emoji" value={form.emoji} onChange={change} placeholder="🌸" />
+                        </div>
+                    </div>
+
+                    <div className="fg-row">
+                        <div className="fg">
+                            <label>Star Rating</label>
+                            <input
+                                type="number"
+                                min="0"
+                                max="5"
+                                step="0.1"
+                                name="rating"
+                                placeholder="0 - 5"
+                                value={form.rating}
+                                onChange={change}
+                            />
+                        </div>
+
+                        <div className="fg">
+                            <label>Reviews</label>
+                            <input
+                                type="number"
+                                min="0"
+                                name="reviews"
+                                placeholder="e.g., 156"
+                                value={form.reviews}
+                                onChange={change}
+                            />
                         </div>
                     </div>
 
