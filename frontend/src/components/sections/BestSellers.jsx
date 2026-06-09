@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import ProductCard from '../ui/ProductCard'
 import { useProducts } from '../../hooks/useProducts'
+import { IGID } from '../../config'
 import s from './BestSellers.module.css'
 
 const PAGE = 9
@@ -91,7 +92,7 @@ export default function BestSellers() {
         )}
 
         <div className={s.footer}>
-          <a href="https://instagram.com/madebyus.resin" target="_blank" rel="noopener noreferrer" className={s.viewAll}>
+          <a href={`https://instagram.com/${IGID}`} target="_blank" rel="noopener noreferrer" className={s.viewAll}>
             View full collection on Instagram →
           </a>
         </div>

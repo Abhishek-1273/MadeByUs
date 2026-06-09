@@ -123,9 +123,9 @@ export default function Footer() {
             <div className={s.colTitle}>Contact</div>
             <div className={s.contacts}>
               {[
-                { Icon:MessageCircle, label:'WhatsApp',  val:'+91 6283359166',   href:`https://wa.me/${WA}`},
+                { Icon:MessageCircle, label:'WhatsApp',  val:'+91 7696278017',   href:`https://wa.me/${WA}`},
                 { Icon:Instagram,     label:'Instagram', val:`@${IGID}`,           href:`https://instagram.com/${IGID}` },
-                { Icon:Mail,          label:'Email',     val:'hello@madebyus.in', href:'mailto:hello@madebyus.in' },
+                { Icon:Mail,          label:'Email',     val:'madebyus.kt@gmail.com', href:'mailto:madebyus.kt@gmail.com' },
                 { Icon:MapPin,        label:'Ships to',  val:'All across India',  href:null },
               ].map(({ Icon, label, val, href }, i) => {
                 const inner = (

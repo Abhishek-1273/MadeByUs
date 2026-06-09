@@ -24,9 +24,9 @@ export default function About() {
             <h2 className={s.title}>A Studio Built on <em>Passion</em></h2>
             <span className={s.divider} />
             <div className={s.paras}>
-              <p className={s.para}>Made By Us started in 2021 from a tiny apartment studio with a handful of pigments, some moulds and a dream — to create jewellery and gifts that feel as personal and precious as the moments they represent.</p>
+              <p className={s.para}>Made By Us started in 2025 from a tiny apartment studio with a handful of pigments, some moulds and a dream — to create jewellery and gifts that feel as personal and precious as the moments they represent.</p>
               <p className={s.para}>We press real flowers from our garden, chase perfect galaxy swirls and stay up late watching resin cure — because we genuinely love what we make. Every piece that leaves our studio is one we'd proudly wear ourselves.</p>
-              <p className={s.para}>From birthday keychains to anniversary love boxes, we've been part of over 2,000 special moments across India. And we're just getting started.</p>
+              <p className={s.para}>From birthday keychains to anniversary love boxes, we've been part of over 500 special moments across India. And we're just getting started.</p>
             </div>
             <div className={s.sig}>
               <div className={s.sigIcon}>🌸</div>

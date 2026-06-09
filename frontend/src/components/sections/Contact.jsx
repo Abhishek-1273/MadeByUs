@@ -4,9 +4,9 @@ import { WA, IGID } from '../../config'
 import s from './Contact.module.css'
 
 const methods = [
-  { Icon:MessageCircle, label:'WhatsApp',     val:'+91 6283359166',  sub:'Replies within 2 hours',       href:`https://wa.me/${WA}`,                 color:'#25D366', bg:'#F0FDF4' },
+  { Icon:MessageCircle, label:'WhatsApp',     val:'+91 7696278017',  sub:'Replies within 2 hours',       href:`https://wa.me/${WA}`,                 color:'#25D366', bg:'#F0FDF4' },
   { Icon:Instagram,     label:'Instagram DM', val:`@${IGID}`,         sub:'For orders and inspiration',   href:`https://instagram.com/${IGID}`,       color:'#E1306C', bg:'#FFF0F5' },
-  { Icon:Mail,          label:'Email',        val:'hello@madebyus.in',sub:'Bulk / wholesale enquiries',   href:'mailto:hello@madebyus.in',            color:'#B8965A', bg:'#F6F1E8' },
+  { Icon:Mail,          label:'Email',        val:'madebyus.kt@gmail.com',sub:'Bulk / wholesale enquiries',   href:'mailto:madebyus.kt@gmail.com',            color:'#B8965A', bg:'#F6F1E8' },
   { Icon:Clock,         label:'Hours',        val:'Mon–Sat  10am–8pm',sub:'Indian Standard Time',         href:null,                                  color:'#7B68C8', bg:'#EEEAF5' },
 ]
 
@@ -58,7 +58,7 @@ export default function Contact() {
             <div className={s.fields}>
               <div>
                 <label className={s.fieldLabel}>Your Name</label>
-                <input className={s.input} placeholder="Priya Sharma" />
+                <input className={s.input} placeholder="Sakshi Sharma" />
               </div>
               <div>
                 <label className={s.fieldLabel}>Message</label>
@@ -74,7 +74,7 @@ export default function Contact() {
             </div>
             <div className={s.formFooter}>
               <MapPin size={11} color="var(--faint)" />
-              <span className={s.formFooterText}>Based in India · Shipping Nationwide · Est. 2021</span>
+              <span className={s.formFooterText}>Based in India · Shipping Nationwide · Est. 2025</span>
             </div>
           </motion.div>
         </div>
